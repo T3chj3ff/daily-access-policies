@@ -60,9 +60,12 @@ li {
 .skip {
   position: absolute;
   top: -100px;
+  left: 8px;
 }
-.skip:focus {
+.skip:focus,
+.skip:focus-visible {
   top: 8px;
+  z-index: 100;
   background: white;
   padding: 12px;
 }
